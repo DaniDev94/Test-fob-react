@@ -1,3 +1,45 @@
-.test{
-    color: red;
+.b-card {
+    max-width: 80vw;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 1rem;
+    -webkit-box-shadow: 0px 26px 28px -15px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 0px 26px 28px -15px rgba(0, 0, 0, 1);
+    box-shadow: 0px 26px 28px -15px rgba(0, 0, 0, 1);
+}
+
+.b-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 1.5rem;
+    @media (min-width: 778px) {
+        padding: 2.5rem 1.5rem;
+    }
+    &__img{
+        width: 75%;
+        margin-right: 1.1rem;
+        @media (min-width: 778px) {
+            width: 40%;
+            margin-right: 1.5rem;
+        }
+    }
+    &__text{
+        font-family:"Montserrat", sans-serif;
+        color: #43464c;
+        font-size: 1.2rem;
+        margin: 1.5rem 0 0 0;
+        line-height : 1.7rem;
+        @media (min-width: 778px) {
+            margin: 1.5rem 1rem 0 1rem;
+        }
+    }
+
+    &__media{
+        font-size: 1.8rem;
+        font-family:"Montserrat", sans-serif;
+        color:#045da7 ;
+        margin: 1.5rem 0 0 0;
+    }
 }
